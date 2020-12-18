@@ -9,9 +9,11 @@
 
     @media(min-width:1200px) {
         max-width: 1600px;
+        margin-right: auto;
+        margin-left: auto;
         padding-top: 75px;
         padding-bottom: 237px;
-        background-image: url("../../img/bg/header-bg.jpg");
+        background-image: url("../img/bg/header-bg.jpg");
         background-repeat: repeat-y;
         background-size: auto;
         background-position: center;
@@ -23,18 +25,15 @@
     justify-content: space-between;
     align-items: center;
     max-width: 1400px;
-    padding-left: 15px;
-    padding-right: 30px;
 
     @media(min-width:768px) {
-        padding-left: 30px;
-        padding-right: 45px;
+
     }
 
     @media(min-width:1200px) {
         max-width: 1400px;
-        padding-left: 100px;
-        padding-right: 100px;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 178px;
     }
 }
@@ -57,6 +56,39 @@
     @media(min-width:1200px) {
         display: block;
     }
+}
+
+
+.header-nav_header-nav-link {
+    position: relative;
+    margin-left: 80px;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--text);
+    z-index: 1;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &::after {
+        content: "";
+        width: 0;
+        height: 6px;
+        position: absolute;
+        left: -5px;
+        right: -5px;
+        bottom: 6px;
+        z-index: -1;
+        background-color: var(--yellow);
+        transition: .5s;
+    }
+
+}
+
+
+.header-nav_header-nav-link:hover::after {
+    width: 110%;
 }
 
 .header-social {
@@ -107,6 +139,7 @@
 }
 
 .header-social-link_vk {
+    width: 39px;
 
     &:hover{
         color: #45668e;
@@ -124,8 +157,10 @@
 }
 
 .content-row {
+    position: relative;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .header-desc {
@@ -155,7 +190,7 @@ h1 .bottom-line:after {
 }
 
 .header-text p {
-    margin-bottom: 41px;
+    margin-bottom: 50px;
     width: 490px;
     font-size: 24px;
     font-weight: 500;
@@ -177,52 +212,7 @@ h1 .bottom-line:after {
 }
 
 .big-img {
-
-}
-
-.header-desc h2 {
-    font-size: 40px;
-    font-weight: 800;
-    margin-bottom: 40px;
-}
-
-.header-list {
-    max-width: 600px;
-    margin-bottom: 40px;
-}
-
-.header-list span {
-    margin-right: 8px;
-    display: inline-block;
-    width: 20px;
-    height: 2px;
-    background-color: #6b6b6b;
-    vertical-align: middle;
-}
-
-.header-list-item {
-    font-size: 24px;
-    margin-bottom: 3px;
-}
-
-.header-skills h2 {
-    font-size: 40px;
-    font-weight: 800;
-    margin-bottom: 25px;
-}
-
-.header-skills .btn{
-    height: 64px;
-    width: 274px;
-}
-
-
-.header-bottom-social h2{
-    font-size: 40px;
-    font-weight: 800;
-    margin-bottom: 48px;
-}
-
-.header-bottom-social .social-link {
-    margin-bottom: 35px;
+    position: relative;
+    margin-top: -130px;
+    z-index: 1;
 }
