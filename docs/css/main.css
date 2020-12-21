@@ -29,6 +29,7 @@ a,
 a:hover {
   text-decoration: none;
   display: inline-block;
+  color: var(--text);
 }
 ul {
   margin: 0;
@@ -83,6 +84,19 @@ button {
     padding: 0;
   }
 }
+.title-2 {
+  font-size: 64px;
+  font-weight: 800;
+}
+.title-3 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.title-4 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+}
 .bottom-line {
   position: relative;
   display: inline-block;
@@ -92,11 +106,11 @@ button {
 }
 .bottom-line:after {
   content: "";
-  width: 110%;
   height: 10px;
   position: absolute;
   background-color: var(--yellow);
   left: -5px;
+  right: -5px;
   bottom: 10px;
   z-index: -1;
 }
@@ -157,11 +171,26 @@ button {
 .social-link_github {
   color: var(--text);
 }
+.social-link_github:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
 .social-link_telegram {
   color: #039be5;
 }
+.social-link_telegram:hover {
+  color: rgba(3, 154, 229, 0.8);
+}
+.social-link_vk {
+  color: #4d76a1;
+}
+.social-link_vk:hover {
+  color: rgba(77, 118, 161, 0.8);
+}
 .social-link_facebook {
   color: #3b5998;
+}
+.social-link_facebook:hover {
+  color: rgba(59, 88, 152, 0.8);
 }
 .link-email {
   color: var(--text);
@@ -268,7 +297,7 @@ button {
   position: absolute;
   left: -5px;
   right: -5px;
-  bottom: 6px;
+  bottom: 5px;
   z-index: -1;
   background-color: var(--yellow);
   -webkit-transition: .5s;
@@ -361,7 +390,6 @@ button {
 }
 h1 .bottom-line:after {
   content: "";
-  width: 102%;
   height: 12px;
   position: absolute;
   background-color: var(--yellow);
@@ -451,7 +479,7 @@ h1 .bottom-line:after {
        -o-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-.skills-content {
+#skills-content {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -486,8 +514,8 @@ h1 .bottom-line:after {
   font-weight: 800;
   margin-bottom: 48px;
 }
-.skills-content .social-link {
-  margin-bottom: 35px;
+.skills-content-contacts .social-link {
+  margin-bottom: 30px;
 }
 .skills-content-list {
   max-width: 600px;
@@ -504,5 +532,261 @@ h1 .bottom-line:after {
 .skills-content-list-item {
   font-size: 24px;
   margin-bottom: 3px;
+}
+#section-portfolio {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f4f8f9;
+}
+#section-portfolio .bottom-line {
+  z-index: 1;
+}
+#section-portfolio .bottom-line::after {
+  bottom: 18px;
+  height: 12px;
+}
+#section-portfolio .title-2 {
+  margin-bottom: 65px;
+}
+.portfolio-button-group {
+  margin-bottom: 50px;
+}
+.portfolio-button-item {
+  margin-right: 85px;
+  font-size: 28px;
+  font-weight: 800;
+  color: #8fa5ae;
+}
+.portfolio-button-item:last-child {
+  margin-right: 0;
+}
+.portfolio-button-item:hover {
+  color: #ed574f;
+}
+.portfolio-button-item.active {
+  color: #000;
+}
+.project-card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.project-card-big {
+  max-width: 556px;
+  position: relative;
+  display: block;
+  margin-bottom: 60px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
+  overflow: hidden;
+}
+.project-card-big-img {
+  position: relative;
+  margin-bottom: 30px;
+}
+.project-card-big-img button {
+  position: absolute;
+  padding-left: 27px;
+  padding-right: 27px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -235px);
+     -moz-transform: translate(-50%, -235px);
+      -ms-transform: translate(-50%, -235px);
+       -o-transform: translate(-50%, -235px);
+          transform: translate(-50%, -235px);
+  height: 48px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 30px;
+     -moz-border-radius: 30px;
+          border-radius: 30px;
+  background-color: #fff;
+  font-size: 22px;
+  font-weight: 800;
+  color: #ea736d;
+  font-family: 'M PLUS 1p', sans-serif;
+  z-index: 2;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
+}
+.project-card-big-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 0, 0.5);
+  z-index: 1;
+  -webkit-transform: translateX(-100%);
+     -moz-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+       -o-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
+}
+.project-card-big:hover .project-card-big-img button {
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.project-card-big:hover .project-card-big-img::after {
+  -webkit-transform: translateX(0);
+     -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+       -o-transform: translateX(0);
+          transform: translateX(0);
+}
+.project-card-big:hover .title-4 {
+  position: relative;
+  color: #ea736d;
+}
+.project-card-big:hover .title-4::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ea736d;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
+}
+.project-card-big:hover .title-4:hover::after {
+  width: 100%;
+}
+.project-card-big h4 {
+  display: inline-block;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.project-card-big p {
+  font-size: 22px;
+  font-weight: 300;
+}
+.project-card-small {
+  display: block;
+  max-width: 360px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
+}
+.project-card-small-img {
+  position: relative;
+  margin-bottom: 30px;
+}
+.project-card-small-img button {
+  position: absolute;
+  padding-left: 27px;
+  padding-right: 27px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -200px);
+     -moz-transform: translate(-50%, -200px);
+      -ms-transform: translate(-50%, -200px);
+       -o-transform: translate(-50%, -200px);
+          transform: translate(-50%, -200px);
+  height: 48px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 30px;
+     -moz-border-radius: 30px;
+          border-radius: 30px;
+  background-color: #fff;
+  font-size: 22px;
+  font-weight: 800;
+  color: #ea736d;
+  font-family: 'M PLUS 1p', sans-serif;
+  z-index: 2;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
+}
+.project-card-small-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 0, 0.5);
+  z-index: 1;
+  -webkit-transform: translateX(-100%);
+     -moz-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+       -o-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
+}
+.project-card-small:hover .project-card-small-img button {
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.project-card-small:hover .project-card-small-img::after {
+  -webkit-transform: translateX(0);
+     -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+       -o-transform: translateX(0);
+          transform: translateX(0);
+}
+.project-card-small:hover .title-4 {
+  position: relative;
+  color: #ea736d;
+}
+.project-card-small:hover .title-4::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ea736d;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
+}
+.project-card-small:hover .title-4:hover::after {
+  width: 100%;
+}
+.project-card-small h4 {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.project-card-small p {
+  font-size: 20px;
+  font-weight: 300;
 }
 /*# sourceMappingURL=main.css.map */

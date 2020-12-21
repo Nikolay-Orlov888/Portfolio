@@ -23,6 +23,7 @@ html, body, h1, h2, h3, h4, p, ul {
 a,a:hover {
     text-decoration: none;
     display: inline-block;
+    color: var(--text);
 }
 
 ul {
@@ -77,6 +78,22 @@ button {
     }
 }
 
+.title-2 {
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.title-3 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.title-4 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
 .bottom-line {
     position: relative;
     display: inline-block;
@@ -84,11 +101,11 @@ button {
 
     &:after {
         content: "";
-        width: 110%;
         height: 10px;
         position: absolute;
         background-color: var(--yellow);
         left: -5px;
+        right: -5px;
         bottom: 10px;
         z-index: -1;
     }
@@ -154,18 +171,34 @@ button {
 
 .social-link_github {
     color: var(--text);
+    
+    &:hover {
+        color: rgba(0, 0, 0, 0.8) ;
+    }
 }
 
 .social-link_telegram {
     color: #039be5;
+    
+    &:hover {
+        color: rgba(3, 154, 229, 0.8);
+    }
 }
 
 .social-link_vk {
+    color: #4d76a1;
 
+    &:hover {
+        color: rgba(77, 118, 161, 0.8);
+    }
 }
 
 .social-link_facebook {
     color: #3b5998;
+    
+    &:hover {
+        color: rgba(59, 88, 152, 0.8);
+    }
 }
 
 .link-email {
