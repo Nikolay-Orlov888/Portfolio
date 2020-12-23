@@ -1175,4 +1175,23 @@ label.error {
   font-weight: 700;
   color: red;
 }
+.section-footer {
+  padding-top: 25px;
+  padding-bottom: 40px;
+  background-color: #333333;
+}
+.footer-copyright {
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.footer-text {
+  color: #959595;
+  margin-bottom: 2px;
+  font-size: 16px;
+}
+.footer-text:last-child {
+  margin-bottom: 0;
+}
 /*# sourceMappingURL=main.css.map */
