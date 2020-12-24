@@ -79,3 +79,11 @@ $(document).ready(function(){
 
 	
 })
+
+const toggleMenu = document.querySelector('.toggle-menu'); //иконка гамбургер
+
+//прослушиваем событие клик по гамбургеру
+toggleMenu.addEventListener('click', function(){
+	
+	this.classList.toggle('active'); //  переключаем класс active  у гамбургера
+});

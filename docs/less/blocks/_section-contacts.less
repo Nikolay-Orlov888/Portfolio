@@ -1,14 +1,17 @@
 .section-contacts {
-    background-color: #f4f8f9;
+    background-image: url("../img/bg/contacts-bg.jpg");
+    background-repeat: repeat-y;
+    background-size: auto;
+    background-position: center;
     padding-top: 125px;
-    padding-bottom: 125px;
+    padding-bottom: 148px;
     margin-right: auto;
     margin-left: auto;
 }
 
 .section-contacts .title-2 {
     text-align: center;
-    margin-bottom: 65px;
+    margin-bottom: 58px;
 
     .bottom-line::after {
         bottom: 18px;
@@ -22,6 +25,7 @@
 }
 
 .contacts-desc {
+    margin-top: 20px;
     max-width: 510px;
 }
 
@@ -33,39 +37,37 @@
 
 .contacts-content {
     display: flex;
-    margin-bottom: 45px;
+    margin-bottom: -50px;
 }
 
 .contacts-text {
+    max-width: 470px;
     position: absolute;
-    width: 185px;
 }
 
 .contacts-text_item {
+    display: flex;
+    margin-bottom: 23px;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.contacts-text_item span {
+    display: inline-block;
     font-size: 20px;
     font-weight: 700;
-    margin-bottom: 30px;
-
-    &:last-child {
-        margin-bottom: 0;
-    }
+    margin-right: 106px;
+    width: 90px;
 }
 
-.contacts-links {
-
-}
-
-.contacts-link_item {
+.contacts-text_item a{
     font-size: 20px;
     font-weight: 500;
-    margin-bottom: 30px;
-
-    &:last-child {
-        margin-bottom: 0;
-    }
 }
 
-.contacts-link_item a {
+.contacts-text_item a {
     color: #039be5;
 
     &:hover {
@@ -73,8 +75,13 @@
     }
 }
 
-.contacts-link_item.adress {
+.contacts-text_item .adress {
     color: #96969d;
+    margin-bottom: 0;
+}
+
+.form-wrapper {
+    margin-right: 20px;
 }
 
 .contact-form {
