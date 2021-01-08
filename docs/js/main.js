@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+	let containerEl = document.querySelector('#project-card');
+
+    let mixer = mixitup(containerEl);
+
 	// form placeholder
 	const formItems = document.querySelectorAll('.form-field');
 	
