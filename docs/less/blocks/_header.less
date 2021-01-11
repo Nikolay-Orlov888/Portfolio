@@ -1,9 +1,10 @@
 .header {
-    padding-top: 35px;
+    padding-top: 24px;
     padding-bottom: 100px;
+    overflow: hidden;
 
     @media(min-width:768px) {
-        padding-top: 35px;
+        padding-top: 23px;
         padding-bottom: 85px;
     }
 
@@ -25,9 +26,14 @@
     justify-content: space-between;
     align-items: center;
     max-width: 1400px;
+    padding-right: 17px;
+    padding-left: 18px;
+    margin-bottom: 22px;
 
     @media(min-width:768px) {
-
+        padding-right: 31px;
+        padding-left: 35px;
+        margin-bottom: 74px;
     }
 
     @media(min-width:1200px) {
@@ -35,6 +41,8 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 145px;
+        padding-right: 0;
+        padding-left: 0;
     }
 }
 
@@ -158,9 +166,19 @@
 
 .content-row {
     position: relative;
-    display: flex;
-    justify-content: space-between;
     z-index: 2;
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media(min-width:768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @media(min-width:1200px) {
+
+    }
 }
 
 .header-desc {
@@ -172,10 +190,19 @@
 }
 
 .header-title h1 {
-    margin-bottom: 15px;
-    font-size: 90px;
+    font-size: 42px;
     font-weight: 800;
     line-height: 1.2;
+    margin-bottom: 24px;
+
+    @media(min-width:768px) {
+        font-size: 52px;
+        margin-bottom: 15px;
+    }
+
+    @media(min-width:1200px) {
+        font-size: 90px;
+    }
 }
 
 h1 .bottom-line:after {
@@ -184,20 +211,48 @@ h1 .bottom-line:after {
     position: absolute;
     background-color: var(--yellow);
     left: -5px;
-    bottom: 13px;
+    bottom: 5px;
     z-index: -1;
+            
+    @media(min-width:768px) {
+        bottom: 7px;
+    }
+
+    @media(min-width:1200px) {
+        bottom: 13px;
+    }
 }
 
 .header-text p {
     margin-bottom: 30px;
-    width: 490px;
-    font-size: 24px;
+    width: 285px;
+    font-size: 18px;
     font-weight: 500;
     color: #393f47;
+    line-height: 1.6;
+                
+    @media(min-width:768px) {
+        font-size: 18px;
+        width: 331px;
+    }
+
+    @media(min-width:1200px) {
+        font-size: 24px;
+        width: 490px;
+        line-height: 1.5;
+    }
 }
 
 .header-buttons {
-    display: flex;
+    display: none;
+                
+    @media(min-width:768px) {
+        display: none;
+    }
+
+    @media(min-width:1200px) {
+        display: flex;
+    }
 }
 
 .header-buttons .btn {
@@ -209,13 +264,35 @@ h1 .bottom-line:after {
 }
 
 .header-img {
-    width: 50%;
-    padding-top: 25px;
+    width: 100%;
     max-width: 457px;
+    margin-bottom: 77px;
+                
+    @media(min-width:768px) {
+        padding-top: 0;
+        max-width: 290px;
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    @media(min-width:1200px) {
+        padding-top: 25px;
+        max-width: 457px;
+    }
 }
 
 .big-img {
     position: relative;
-    margin-top: -163px;
     z-index: 1;
+    margin-bottom: 112px;
+
+    @media(min-width:768px) {
+        margin-top: -46px;
+        margin-bottom: 31px;
+    }
+
+    @media(min-width:1200px) {
+        margin-top: -162px;
+        margin-bottom: 0px;
+    }
 }

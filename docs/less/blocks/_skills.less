@@ -1,40 +1,109 @@
 #skills-content {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
     margin-top: -20px;
     margin-right: 40px;
+    
+    @media(min-width:768px) {
+        margin-right: 75px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @media(min-width:1200px) {
+        margin-right: 40px;
+    }
 }
 
 .skills-content-text {
-    width: 57%;
+    width: 100%;
     max-width: 600px;
+
+    @media(min-width:768px) {
+        width: 57%;
+        max-width: 600px;
+    }
+
+    @media(min-width:1200px) {
+
+    }
 }
 
 .skills-content-text h3 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 800;
-    margin-bottom: 25px;
+    margin-bottom: 19px;
+
+    @media(min-width:768px) {
+        font-size: 32px;
+        margin-bottom: 13px;
+    }
+
+    @media(min-width:1200px) {
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
 }
 
 .skills-content-text .btn{
-    height: 64px;
-    padding-left: 40px;
-    padding-right: 40px;
+    display: none;
+
+    
+    @media(min-width:768px) {
+        display: none;
+    }
+
+    @media(min-width:1200px) {
+        display: block;
+        height: 64px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 .skills-content-contacts {
-    width: 40%;
-    max-width: 320px;
+    width: 290px;
+
+        
+    @media(min-width:768px) {
+        width: 40%;
+        max-width: 320px;
+    }
+
+    @media(min-width:1200px) {
+
+    }
 }
 
 .skills-content-contacts h3 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 800;
-    margin-bottom: 30px;
+    margin-bottom: 17px;
+    margin-top: -9px;
+    
+    @media(min-width:768px) {
+        font-size: 32px;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+
+    @media(min-width:1200px) {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
 }
 
 .skills-content-contacts .social-link {
-    margin-bottom: 17px;
+    margin-bottom: 6px;
+        
+    @media(min-width:768px) {
+        width: 290px;
+        margin-bottom: 13px;
+    }
+
+    @media(min-width:1200px) {
+        margin-bottom: 17px;
+    }
 }
 
 
@@ -44,15 +113,34 @@
 }
 
 .skills-content-list span {
-    margin-right: 8px;
-    display: inline-block;
-    width: 20px;
-    height: 2px;
-    background-color: #6b6b6b;
-    vertical-align: middle;
+    display: none;
+            
+    @media(min-width:768px) {
+        display: none;
+    }
+
+    @media(min-width:1200px) {
+        margin-right: 8px;
+        display: inline-block;
+        width: 20px;
+        height: 2px;
+        background-color: #6b6b6b;
+        vertical-align: middle;
+    }
 }
 
 .skills-content-list-item {
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 3px;
+    line-height: 1.6;
+        
+    @media(min-width:768px) {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    @media(min-width:1200px) {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
 }

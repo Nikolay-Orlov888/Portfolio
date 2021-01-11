@@ -20,6 +20,25 @@ html, body, h1, h2, h3, h4, p, ul {
     font-weight: 400;
 }
 
+body.noscroll {
+    overflow: hidden;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 3;
+    display: none;
+}
+
+#overlay.active {
+    display: block;
+}
+
 a,a:hover {
     text-decoration: none;
     display: inline-block;
@@ -216,7 +235,7 @@ button {
 
 .link-email {
     color: var(--text);
-    font-size: 24px;
+    font-size: 18px;
     border-bottom: 1px solid #000000;
     transition: 0.5s;
 
@@ -228,5 +247,14 @@ button {
     &:active {
         color: #ee8c88;
         border-color: #ee8c88;
+    }
+
+                
+    @media(min-width:768px) {
+        font-size: 20px;
+    }
+
+    @media(min-width:1200px) {
+        font-size: 24px;
     }
 }
