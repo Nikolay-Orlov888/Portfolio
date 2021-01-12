@@ -10,14 +10,33 @@
     max-width: 556px;
     position: relative;
     display: block;
-    margin-bottom: 58px;
+    margin-bottom: 49px;
     transition: .5s;
     overflow: hidden;
+    
+    @media(min-width:768px) {
+        max-width: 338px;
+        margin-bottom: 18px;
+    }
+
+    @media(min-width:1200px) {
+        max-width: 556px;
+        margin-bottom: 57px;
+    }
 }
 
 .project-card-big-img {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 18px;
+        
+    @media(min-width:768px) {
+        margin-bottom: 30px;
+    }
+
+    @media(min-width:1200px) {
+        margin-bottom: 30px;
+    }
+
     button {
         position: absolute;
         padding-left: 27px;
@@ -102,13 +121,29 @@
 
 .project-card-big h4 {
     display: inline-block;
-    font-size: 32px;
+    font-size: 22px;
     margin-bottom: 6px;
+        
+    @media(min-width:768px) {
+        font-size: 24px;
+    }
+
+    @media(min-width:1200px) {
+        font-size: 32px;
+    }
 }
 
 .project-card-big p {
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 300;
+            
+    @media(min-width:768px) {
+        font-size: 18px;
+    }
+
+    @media(min-width:1200px) {
+        font-size: 22px;
+    }
 }
 
 .project-card-small {
@@ -117,11 +152,39 @@
     position: relative;
     overflow: hidden;
     transition: .5s;
+    margin-bottom: 50px;
+
+    &:last-child {
+        margin-bottom: 45px;
+    }
+        
+    @media(min-width:768px) {
+        max-width: 338px;
+        margin-bottom: 45px;
+        &:last-child {
+            display: none;
+        }
+    }
+
+    @media(min-width:1200px) {
+        margin-bottom: 0;
+        &:last-child {
+            display: block;
+        }
+    }
 }
 
 .project-card-small-img {
     position: relative;
     margin-bottom: 25px;
+                
+    @media(min-width:768px) {
+        margin-bottom: 35px;
+    }
+
+    @media(min-width:1200px) {
+        margin-bottom: 40px;
+    }
 
     button {
         position: absolute;
@@ -203,12 +266,31 @@
 
 .project-card-small h4 {
     display: inline-block;
-    margin-bottom: 5px;
+    margin-bottom: 9px;
+    font-size: 22px;
+            
+    @media(min-width:768px) {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    @media(min-width:1200px) {
+        font-size: 26px;
+        margin-bottom: 5px;
+    }
 }
 
 .project-card-small p {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
+                
+    @media(min-width:768px) {
+        font-size: 18px;
+    }
+
+    @media(min-width:1200px) {
+        font-size: 20px;
+    }
 }
 
 .project-card-small  {

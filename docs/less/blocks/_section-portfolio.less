@@ -1,9 +1,19 @@
 #section-portfolio {
     margin-right: auto;
     margin-left: auto;
-    padding-top: 100px;
-    padding-bottom: 125px;
+    padding-top: 47px;
+    padding-bottom: 160px;
     background-color: #f4f8f9;
+
+    @media(min-width:768px) {
+        padding-top: 62px;
+        padding-bottom: 155px;
+    }
+
+    @media(min-width:1200px) {
+        padding-top: 100px;
+        padding-bottom: 125px;
+    }
 }
 
 #section-portfolio .bottom-line {
@@ -18,6 +28,15 @@
 
 #section-portfolio .title-2 {
     margin-bottom: 40px;
+    font-size: 42px;
+    
+    @media(min-width:768px) {
+        font-size: 52px;
+    }
+
+    @media(min-width:1200px) {
+        font-size: 64px;
+    }
 }
 
 .portfolio-project-row {
@@ -29,21 +48,47 @@
 }
 
 .portfolio-button-item {
-    margin-right: 62px;
-    font-size: 28px;
-    font-weight: 800;
-    color: #8fa5ae;
-
-    &:last-child {
-        margin-right: 0;
+    display: none;
+    
+    @media(min-width:768px) {
+        display: inline-block;
+        font-size: 24px;
+        margin-right: 32px;
+        font-weight: 800;
+        color: #8fa5ae;
+    
+        &:last-child {
+            margin-right: 0;
+        }
+    
+        &:hover {
+            color: #ed574f;
+        }
     }
 
-    &:hover {
-        color: #ed574f;
+    @media(min-width:1200px) {
+        margin-right: 62px;
+        font-size: 28px;
     }
 
 }
 
 .mixitup-control-active {
     color: #000;
+}
+
+.portfolio-projects-link {
+    font-size: 20px;
+    color: #039be5;
+    border-bottom: 1px solid #039be5;
+    line-height: 1.1;
+    width: 73%;
+
+    @media(min-width:768px) {
+        width: 31%;
+    }
+
+    @media(min-width:1200px) {
+        display: none;
+    }
 }
