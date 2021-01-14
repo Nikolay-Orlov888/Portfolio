@@ -20,8 +20,16 @@
     z-index: 1;
 
     &::after {
-        bottom: 18px;
+        bottom: 10px;
         height: 12px;
+        
+        @media(min-width:768px) {
+            bottom: 12px;
+        }
+
+        @media(min-width:1200px) {
+            bottom: 18px;
+        }
     }
 
 }
@@ -77,18 +85,18 @@
     color: #000;
 }
 
-.portfolio-projects-link {
-    font-size: 20px;
-    color: #039be5;
-    border-bottom: 1px solid #039be5;
-    line-height: 1.1;
-    width: 78%;
+// .portfolio-projects-link {
+//     font-size: 20px;
+//     color: #039be5;
+//     border-bottom: 1px solid #039be5;
+//     line-height: 1.1;
+//     width: 78%;
 
-    @media(min-width:768px) {
-        width: 31%;
-    }
+//     @media(min-width:768px) {
+//         width: 31%;
+//     }
 
-    @media(min-width:1200px) {
-        display: none;
-    }
-}
+//     @media(min-width:1200px) {
+//         display: none;
+//     }
+// }
