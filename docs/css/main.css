@@ -1647,12 +1647,13 @@ h1 .bottom-line:after {
   display: inline-block;
   font-size: 18px;
   font-weight: 700;
-  margin-right: 106px;
+  margin-right: 250px;
   width: 90px;
 }
 @media (min-width: 768px) {
   .contacts-text_item span {
     font-size: 18px;
+    margin-right: 106px;
   }
 }
 @media (min-width: 1200px) {
@@ -1723,11 +1724,17 @@ h1 .bottom-line:after {
   }
 }
 .move-quot {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: .5;
-  max-width: 283px;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .move-quot {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    max-width: 283px;
+  }
 }
 .contact-form {
   margin-top: 44px;
