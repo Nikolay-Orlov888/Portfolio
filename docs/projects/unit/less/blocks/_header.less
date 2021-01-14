@@ -1,0 +1,296 @@
+.header {
+    position: relative;
+    min-height: 100vh;
+    background-color: #675450;
+    color: #fff;
+
+    background-image: url("../img/header/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        height: 568px;
+        min-height: auto;
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        height: 870px;
+    }
+}
+
+.header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header_content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 65px;
+    padding-bottom: 30px;
+    
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        padding-top: 45px;
+        padding-bottom: 30px;
+    }
+}
+
+.header_center {
+    padding-bottom: 35px;
+}
+
+.header_logo {
+    font-size: 62px;
+    letter-spacing: 12.4px;
+    margin: 0;
+    // margin-bottom: 25px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        font-size: 82px;
+        letter-spacing: 16.4px;
+        // margin-bottom: 25px;
+        margin-left: 21px;
+        padding: 0;
+    }
+    
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        font-size: 96px;
+        letter-spacing: 19.2px;
+        margin-bottom: 40px;
+    }
+}
+
+.header_desc {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    padding-bottom: 20px;
+
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        margin-bottom: 35px;
+        max-width: 646px;
+
+    }
+    
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        margin-bottom: 65px;
+        font-size: 20px;
+        font-weight: 700;
+        max-width: 726px;
+    }
+}
+
+.header_desc span {
+    letter-spacing: 0.6px;
+}
+
+.header_desc p {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.header_form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+    @media (min-width: 520px) {
+        width: 490px;
+    }
+
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        flex-direction: row;
+        width: auto;
+    }
+}
+
+.header_form-input {
+    width: 100%;
+    margin-bottom: 10px;
+    
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        width: 200px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+}
+
+.header_form-submit {
+
+    .button_submit {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.input {
+    width: 100%;
+    // width: 200px;
+    height: 60px;
+    padding:0 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+
+
+    &::placeholder {
+        color: #fff;
+    }
+    
+    &:focus {
+        outline: none;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+.button_submit {
+    padding: 0 30px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    background-color: #50e3a4;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2.86;
+    letter-spacing: 2.8px;
+    transition: background-color 0.2s ease;
+
+    &:hover, &:focus {
+        outline: none;
+        background-color: darken(#50e3a4, 15%);
+    }
+}
+
+.header-scroll {
+    display: none;
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        display: block;
+        position: absolute;
+        bottom: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 32px;
+        height: 48px;
+    }
+}
+
+.header_top-buttons {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.header_nav-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &:hover, &:focus {
+        outline: none;
+        background-color: lighten(#000, 15%);
+    }
+    
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        left: 20px;
+        right: auto;
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        top: 60px;
+        left: 70px;
+        right: auto;
+    }
+}
+
+.header_search-button {
+    display: none;
+
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 20px;
+        right: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+
+        &:hover, &:focus {
+            outline: none;
+            background-color: lighten(#000, 15%);
+        }
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        top: 60px;
+        right: 70px;
+    }
+}

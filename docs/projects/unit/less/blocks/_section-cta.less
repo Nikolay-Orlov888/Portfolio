@@ -1,0 +1,90 @@
+.section-cta {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 78px;
+    color: white;
+    background-image: url(../img/bg-cta-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {        
+        padding-top: 70px;
+        padding-bottom: 80px;
+        background-image: url(../img/bg-cta-tablet.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        padding-top: 82px;
+        padding-bottom: 90px;
+        background-image: url(../img/cta-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.section-cta::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 130, 78, 0.7);
+}
+
+.cta-content {
+    position: relative;
+}
+
+.cta-title {
+    margin-bottom: 40px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.35;
+
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        margin-bottom: 55px;
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+}
+
+.cta-unit {
+    letter-spacing: 2.8px;
+    font-weight: 700;
+}
+  
+.cta-button {
+    padding: 21px 40px 20px 40px;
+    background-color: #fff;
+    color: #4abd8d;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s ease-in;
+}
+
+.cta-button:hover {
+    background-color: rgb(202, 202, 202);
+}
+
+  

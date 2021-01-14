@@ -1,0 +1,119 @@
+.section-clients {
+    padding: 110px 0 75px;
+    background-image: url("../img/clients/bg-clients.svg");
+    background-repeat: no-repeat;
+    background-position: center 156px;
+    background-size: auto;
+}
+
+.section-clients_title {
+    margin-bottom: 75px;
+    text-align: center;
+    letter-spacing: 2.9px;
+}
+
+.section-clients_header {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.cection-clients__carousel {
+    width: 770px;
+    margin: 0 auto;
+}
+
+.testimonial-carousel {
+    
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-text {
+    color: #808080;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2.22;
+    text-align: center;
+
+    p {
+        margin: 0;
+        margin-bottom: 62px;
+    }
+}
+.testimonial-user {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-user-photo {
+    margin-right: 40px;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.testimonial-user-name {
+    color: #808080;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.clients-carousel.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 15px;
+    left: -40px;
+    transform: translateX(-100%);
+    width: 52px;
+    height: 52px;
+    outline:none;
+
+    background-image: url(../img/carousel/arrow-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    span {
+        display: none;
+    }
+}
+
+.clients-carousel.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 15px;
+    right: -40px;
+    transform: translateX(100%);
+    width: 52px;
+    height: 52px;
+    outline:none;
+
+    background-image: url(../img/carousel/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    span {
+        display: none;
+    }
+}

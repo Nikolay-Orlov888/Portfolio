@@ -1,0 +1,125 @@
+.section-price {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 90px;
+    background-image: url("../img/price-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.price-content {
+    position: relative;
+    text-align: center;
+}
+
+.price-content .section-title {
+    margin-bottom: 75px;
+    color: #fff;
+}
+
+.price-content .section-header {
+    margin-bottom: 75px;
+    color: #fff;
+}
+
+.section-price::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-price-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-price {
+    margin-right: 30px;
+    width: 300px;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: hsla(0, 0%, 0%, 0.75);
+    border-radius: 8px;
+    transition: 0.2s ease-in;
+}
+
+.card-price:hover {
+    background-color: hsla(231, 99%, 59%, 0.95);
+}
+
+.card-price:last-child {
+    margin-right: 0;
+}
+
+.card-price-header {
+    border-bottom: 1px solid rgba(240, 240, 240, 0.1);
+    margin-bottom: 38px;
+}
+
+.card-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+}
+
+.card-cost {
+    margin-bottom: 15px;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.card-pay {
+    display: inline-block;
+    padding: 4px 14px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+}
+
+.card-price-desc {
+    list-style: none;
+    margin-bottom: 38px;
+}
+
+.desc-item {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.desc-item:last-child {
+    margin-bottom: 0px;
+}
+
+
+.card-link {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-link:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}

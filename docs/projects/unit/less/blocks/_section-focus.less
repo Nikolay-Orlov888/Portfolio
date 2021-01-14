@@ -1,0 +1,40 @@
+.section-focus {
+    position: relative;
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+.section-focus::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 50%;
+    height: 130px;
+    width: 130px;
+    transform: translate(50%, -50%) rotate(45deg);
+    background-color: #a4eecb;
+}
+
+.focus-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.focus-img {
+    position: relative;
+    width: 470px;
+    height: 731px;
+}
+
+.focus-img img {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.focus-text {
+    width: 470px;
+    padding-bottom: 130px;
+}
+
