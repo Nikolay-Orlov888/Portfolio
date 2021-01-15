@@ -193,6 +193,9 @@ button {
   width: 50px;
   margin-right: 25px;
 }
+.social-link-item:hover {
+  opacity: 0.8;
+}
 .social-link-item:last-child {
   margin-right: 0;
 }
@@ -316,6 +319,9 @@ button {
   font-size: 42px;
   color: var(--text);
   z-index: 1;
+}
+.header-logo.bottom-line:hover {
+  opacity: 0.8;
 }
 .header-nav {
   display: none;
@@ -677,6 +683,8 @@ h1 .bottom-line:after {
 @media (min-width: 1200px) {
   #skills-content {
     margin-right: 40px;
+    margin-top: -70px;
+    padding-top: 70px;
   }
 }
 .skills-content-text {
