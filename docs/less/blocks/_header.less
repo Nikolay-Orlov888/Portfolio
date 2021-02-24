@@ -289,10 +289,20 @@ h1 .bottom-line:after {
     position: relative;
     z-index: 1;
     margin-bottom: 104px;
+    transform: scale(1.8);
+
+    @media(min-width:425px) {
+        transform: scale(1.5);
+    }
+    
+    @media(min-width:576px) {
+        transform: scale(1.2);
+    }
 
     @media(min-width:768px) {
         margin-top: -55px;
         margin-bottom: 31px;
+        transform: scale(1);
     }
 
     @media(min-width:1200px) {

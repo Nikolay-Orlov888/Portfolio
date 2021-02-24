@@ -1,24 +1,56 @@
 .section-clients {
-    padding: 110px 0 75px;
-    background-image: url("../img/clients/bg-clients.svg");
-    background-repeat: no-repeat;
-    background-position: center 156px;
-    background-size: auto;
+    padding: 75px 0 143px;
+
+                
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        padding: 75px 0 56px;
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        background-image: url("../img/clients/bg-clients.svg");
+        background-repeat: no-repeat;
+        background-position: center 156px;
+        background-size: auto;
+        padding: 110px 0 75px;
+    }
 }
 
 .section-clients_title {
-    margin-bottom: 75px;
+    margin-bottom: 36px;
     text-align: center;
     letter-spacing: 2.9px;
+                    
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        margin-bottom: 24px;
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        margin-bottom: 75px;
+
+    }
 }
 
 .section-clients_header {
-    margin-bottom: 80px;
+    margin-bottom: 33px;
     text-align: center;
+                        
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        margin-bottom: 65px;
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        margin-bottom: 81px;
+    }
 }
 
 .cection-clients__carousel {
-    width: 770px;
+    max-width: 770px;
     margin: 0 auto;
 }
 
@@ -30,27 +62,76 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 520px;
+    margin: 0 auto;
+                                    
+        // Медиа запрос для планшета и выше
+        @media (min-width: 768px) {
+            max-width: 467px;
+        }
+
+        // Медиа запрос для десктопов 
+        @media (min-width: 1200px) {
+            max-width: 755px;
+        }
 }
 
 .testimonial-text {
+    margin-bottom: 15px;
     color: #808080;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 2.22;
+    line-height: 2;
     text-align: center;
 
     p {
         margin: 0;
-        margin-bottom: 62px;
+        margin-bottom: 11px;
+                                
+        // Медиа запрос для планшета и выше
+        @media (min-width: 768px) {
+            margin-bottom: 15px;
+        }
+
+        // Медиа запрос для десктопов 
+        @media (min-width: 1200px) {
+
+        }
+
+    }
+                    
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        font-size: 16px;
+        line-height: 2.13;
+        margin-bottom: 25px;
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        font-size: 18px;
+        line-height: 2.22;
+        margin-bottom: 47px;
     }
 }
 .testimonial-user {
     display: flex;
     align-items: center;
+    flex-direction: column;
+                        
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        flex-direction: row;
+    }
 }
 
 .testimonial-user-photo {
-    margin-right: 40px;
+    margin-bottom: 16px;
     width: 60px;
     height: 60px;
     overflow: hidden;
@@ -61,6 +142,17 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
+    }         
+
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        margin-right: 40px;
+        margin-bottom: 0;
     }
 }
 
@@ -74,8 +166,9 @@
 
 .clients-carousel.owl-carousel .owl-nav button.owl-prev {
     position: absolute;
-    top: 15px;
-    left: -40px;
+    bottom: -70px;
+    left: 50%;
+    margin-left: -20px;
     transform: translateX(-100%);
     width: 52px;
     height: 52px;
@@ -93,13 +186,29 @@
     span {
         display: none;
     }
+    
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        top: 13px;
+        left: 0;
+        bottom: auto;
+        margin-left: 0;
+        transform: unset;
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        top: 15px;
+        left: -40px;
+        transform: translateX(-100%);
+    }
 }
 
 .clients-carousel.owl-carousel .owl-nav button.owl-next {
     position: absolute;
-    top: 15px;
-    right: -40px;
-    transform: translateX(100%);
+    bottom: -40px;
+    left: 50%;
+    transform: translate(37%, 56%);
     width: 52px;
     height: 52px;
     outline:none;
@@ -115,5 +224,20 @@
 
     span {
         display: none;
+    }
+        
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        top: 13px;
+        right: 0;
+        left: auto;
+        transform: unset;
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        top: 15px;
+        right: -40px;
+        transform: translateX(100%);
     }
 }

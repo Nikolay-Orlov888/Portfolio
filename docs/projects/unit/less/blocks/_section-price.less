@@ -1,10 +1,23 @@
 .section-price {
     position: relative;
-    padding-top: 100px;
-    padding-bottom: 90px;
-    background-image: url("../img/price-bg.jpg");
+    padding-top: 74px;
+    padding-bottom: 80px;
+    background-color: #43b484;
     background-size: cover;
     background-position: center;
+    
+        // Медиа запрос для планшета и выше
+        @media (min-width: 768px) {
+            background-image: url("../img/price-bg.jpg");
+            padding-top: 70px;
+            padding-bottom: 85px;
+        }
+    
+        // Медиа запрос для десктопов 
+        @media (min-width: 1200px) {
+            padding-top: 100px;
+            padding-bottom: 90px;
+        }
 }
 
 .price-content {
@@ -13,41 +26,98 @@
 }
 
 .price-content .section-title {
-    margin-bottom: 75px;
+    margin-bottom: 35px;
     color: #fff;
+        
+        // Медиа запрос для планшета и выше
+        @media (min-width: 768px) {
+            margin-bottom: 33px;
+        }
+    
+        // Медиа запрос для десктопов 
+        @media (min-width: 1200px) {
+            margin-bottom: 75px;
+        }
 }
 
 .price-content .section-header {
-    margin-bottom: 75px;
+    margin-bottom: 41px;
     color: #fff;
+            
+        // Медиа запрос для планшета и выше
+        @media (min-width: 768px) {
+            margin-bottom: 60px;
+        }
+    
+        // Медиа запрос для десктопов 
+        @media (min-width: 1200px) {
+            margin-bottom: 75px;
+        }
 }
 
 .section-price::before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+        
+        // Медиа запрос для планшета и выше
+        @media (min-width: 768px) {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    
+        // Медиа запрос для десктопов 
+        @media (min-width: 1200px) {
+
+        }
 }
 
 .card-price-row {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+
+        // Медиа запрос для планшета и выше
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+    
+        // Медиа запрос для десктопов 
+        @media (min-width: 1200px) {
+
+        }
 }
 
 .card-price {
-    margin-right: 30px;
-    width: 300px;
+    width: 290px;
     color: #fff;
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: hsla(0, 0%, 0%, 0.75);
     border-radius: 8px;
     transition: 0.2s ease-in;
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+        // Медиа запрос для планшета и выше
+        @media (min-width: 768px) {
+            width: 230px;
+            margin-right: 25px;
+            margin-bottom: 0;
+        }
+    
+        // Медиа запрос для десктопов 
+        @media (min-width: 1200px) {
+            width: 300px;
+            margin-right: 30px;
+        }
 }
 
 .card-price:hover {
@@ -97,7 +167,17 @@
 .desc-item {
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    
+        // Медиа запрос для планшета и выше
+        @media (min-width: 768px) {
+
+        }
+    
+        // Медиа запрос для десктопов 
+        @media (min-width: 1200px) {
+            margin-bottom: 20px;
+        }
 }
 
 .desc-item:last-child {

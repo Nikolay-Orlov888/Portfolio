@@ -64,8 +64,18 @@ body, h1, h2, h3, h4, p, div, ul, a {
 }
 
 .section-title.section-title--small {
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 2.9px;
+            
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        font-size: 14px;
+    }
 }
 
 .section-header{

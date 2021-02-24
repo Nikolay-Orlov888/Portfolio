@@ -1,29 +1,67 @@
 .footer {
-    padding-top: 80px;
+    padding-top: 57px;
     padding-bottom: 65px;
     background-color: #1a1a1a;
+                                
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        padding-top: 72px;
+        padding-bottom: 90px;
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        padding-top: 90px;
+        padding-bottom: 65px;
+    }
 }
 
 .footer-content {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 44px;
+                                    
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        margin-bottom: 54px;
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        flex-direction: row;
+        margin-bottom: 23px;
+    }
 }
 
 .footer-content-nav {
-    margin-right: 30px;
+    margin-bottom: 26px;
+    display: flex;
+    flex-direction: column;
+                                        
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        margin-bottom: 50px;
+        flex-direction: row;
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        margin-right: 30px;
+    }
 }
 
 .footer-nav {
+    margin-bottom: 25px;
     position: relative;
-    margin-right: 40px;
+    text-align: center;
     text-decoration: none;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 700;
-    letter-spacing: 3.2px;
+    letter-spacing: 2.5px;
     text-transform: uppercase;
     transition: 0.2s ease-in;
 
@@ -32,7 +70,19 @@
     }
 
     &:hover {
-    color: rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, 0.5);
+    }
+                                            
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        letter-spacing: 2.5px;
+        margin-right: 40px;
+        margin-bottom: 0;
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        letter-spacing: 3.2px;
     }
 }
 
@@ -44,7 +94,7 @@
     display: inline-block;
     width: 48px;
     height: 48px;
-    margin-right: 30px;
+    margin-right: 18px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     text-decoration: none;
@@ -55,6 +105,16 @@
 
     &:hover {
     background-color: rgba(255, 255, 255, 0.5)
+    }
+                                                
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        margin-right: 30px;
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+
     }
 }
 
@@ -67,12 +127,25 @@
 
 
 .copyright {
+    width: 190px;
+    margin: auto;
     text-align: center;
     font-size: 14px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.3);
+
     & span {
         font-weight: 700;
         letter-spacing: 1.4px;
+    }
+                                            
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        width: 100%;
     }
 }

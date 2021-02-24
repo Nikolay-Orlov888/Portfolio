@@ -1,40 +1,124 @@
 .section-focus {
     position: relative;
-    padding-top: 80px;
+    padding-top: 84px;
+    padding-bottom: 18px;
     overflow: hidden;
+        
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        padding-top: 33px;
+        padding-bottom: 44px;
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        padding-top: 80px;
+        padding-bottom: 0;
+    }
 }
 
 .section-focus::before {
-    position: absolute;
     content: "";
-    right: 0;
-    top: 50%;
-    height: 130px;
-    width: 130px;
+    position: absolute;
+    right: 50%;
+    top: 0;
     transform: translate(50%, -50%) rotate(45deg);
+    width: 68px;
+    height: 68px;
     background-color: #a4eecb;
+
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        background-color: #a4eecb00;
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) { 
+        content: "";
+        position: absolute;
+        width: 132px;
+        height: 132px;
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%) rotate(45deg);
+        background-color: #a4eecb;
+    }
 }
 
 .focus-content {
     display: flex;
+    flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
+    
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        flex-direction: row;
+        // align-items: flex-start;
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+
+    }
 }
 
 .focus-img {
     position: relative;
-    width: 470px;
-    height: 731px;
+    max-width: 470px;
+
+        // Медиа запрос для планшета и выше
+        @media (min-width: 768px) {
+            max-width: unset;
+            width: 287px;
+            height: 505px;
+        }
+    
+        // Медиа запрос для десктопов 
+        @media (min-width: 1200px) {
+            height: 731px;
+            width: 470px;
+        }
 }
 
 .focus-img img {
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: static;
+    max-width: 100%;
+    transform: translateX(-4%);
+
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        position: absolute;
+        height: 100%;
+        right: 0;
+        top: 48px;
+        max-width: unset;
+        transform: translateX(0%);
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        top: 0;
+    }
 }
 
 .focus-text {
-    width: 470px;
-    padding-bottom: 130px;
+    max-width: 470px;
+    padding-bottom: 14px;
+    text-align: center;
+            
+    // Медиа запрос для планшета и выше
+    @media (min-width: 768px) {
+        text-align: left;
+        max-width: 406px;
+        padding-bottom: 50px;
+    }
+
+    // Медиа запрос для десктопов 
+    @media (min-width: 1200px) {
+        max-width: 470px;
+        margin-left: auto;
+        padding-bottom: 130px;
+    }
 }
 
